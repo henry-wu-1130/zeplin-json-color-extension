@@ -1,0 +1,23 @@
+{
+  "name": "zeplin-json-color-extension",
+  "version": "0.1.0",
+  "description": "Color snippet for mostly `css-in-js` framework's configuration file.",
+  "sideEffects": false,
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "test": "zem test",
+    "publish": "zem publish"
+  },
+  "zeplin": {
+    "displayName": "Export Json Color",
+    "platforms": [
+      "web"
+    ]
+  },
+  "dependencies": {
+    "zem": "^1.3.1"
+  }
+}

@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colors should generate code snippet 1`] = `
+Object {
+  "code": undefined,
+  "language": "json",
+}
+`;
+
+exports[`Colors should generate exportable file 1`] = `undefined`;
+
+exports[`Component \`Button / Primary / Disabled\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Primary / Hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Primary / Pressed\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Primary button\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Secondary / Default\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Secondary / Disabled 🐣\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Secondary / Hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / Secondary / Pressed\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / no / default\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / no / disabled\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / no / hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / yes / default\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / yes / disabled\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / default / yes / hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / no / default\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / no / disabled\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / no / hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / yes / default\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / yes / disabled\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Button / error / yes / hover\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Header\` should generate code snippet 1`] = `undefined`;
+
+exports[`Component \`Search field\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Exportable layer\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with blur\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with border radius\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with border\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with fill\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with gradient border\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with gradient fill\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Layer with shadow\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Rotated layer\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Sample layer\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Text layer with multiple styles\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Text layer\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`Transparent layer with blend mode\` should generate code snippet 1`] = `undefined`;
+
+exports[`Layer \`layer with layout\` should generate code snippet 1`] = `undefined`;
+
+exports[`Screen \`Screen with 3 tags\` should generate code snippet 1`] = `undefined`;
+
+exports[`Screen \`Screen with description\` should generate code snippet 1`] = `undefined`;
+
+exports[`Screen \`Simple screen\` should generate code snippet 1`] = `undefined`;
+
+exports[`Spacing should generate code snippet 1`] = `undefined`;
+
+exports[`Spacing should generate exportable file 1`] = `undefined`;
+
+exports[`Text Styles should generate code snippet 1`] = `undefined`;
+
+exports[`Text Styles should generate exportable file 1`] = `undefined`;
