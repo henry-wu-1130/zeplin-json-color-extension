@@ -15,11 +15,17 @@ function colors(context) {
   const result = {};
 
   colors.forEach((color) => {
+    console.log('color', color.toHex());
     const isNested = /-/.test(color.name);
-    const hexColor = `#${color.toHex().r}${color.toHex().g}${color.toHex().b}`;
+    const isOpacity1 = color.toHex().a === 'ff';
+    const hexColor = isOpacity1
+      ? `#${color.toHex().r}${color.toHex().g}${color.toHex().b}`
+      : `#${color.toHex().r}${color.toHex().g}${color.toHex().b}${
+          color.toHex().a
+        }`;
 
     if (isNested && !excludedRegex.test(color.name)) {
-      const keys = color.name.split('-');
+      const keys = color.name.split(/-(.*)/s);
       if (keys[0] in result) {
         result[keys[0]][keys[1]] = hexColor;
         return;
@@ -37,7 +43,44 @@ function colors(context) {
   };
 }
 
-function textStyles(context) {}
+function textStyles(context) {
+  const textStyles = context.project.textStyles || [];
+
+  const result = {};
+  textStyles.forEach((textStyle) => {
+    console.log(textStyle);
+    const splitText = textStyle.name.split(/(\(|\))/);
+    const level1 = splitText[0];
+    const level2 = splitText[2];
+    const hexColor = `#${textStyle.color.toHex().r}${
+      textStyle.color.toHex().g
+    }${textStyle.color.toHex().b}`;
+    if (level1 in result) {
+      result[level1][level2] = {
+        color: hexColor,
+        fontSize: `${textStyle.fontSize}px`,
+        fontWeight: textStyle.weightText,
+        fontFamily: textStyle.fontFamily,
+        lineHeight: `${textStyle.lineHeight}px`,
+      };
+      return;
+    }
+    result[level1] = {
+      [level2]: {
+        color: hexColor,
+        fontSize: `${textStyle.fontSize}px`,
+        fontWeight: textStyle.weightText,
+        fontFamily: textStyle.fontFamily,
+        lineHeight: `${textStyle.lineHeight}px`,
+      },
+    };
+  });
+  console.log(result);
+  return {
+    language: 'json',
+    code: JSON.stringify(result, null, 2),
+  };
+}
 
 function spacing(context) {}
 
