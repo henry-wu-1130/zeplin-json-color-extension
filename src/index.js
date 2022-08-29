@@ -48,13 +48,13 @@ function textStyles(context) {
 
   const result = {};
   textStyles.forEach((textStyle) => {
-    console.log(textStyle);
     const splitText = textStyle.name.split(/(\(|\))/);
     const level1 = splitText[0];
-    const level2 = splitText[2];
+    const level2 = `${splitText[2]}${splitText[4]}`;
     const hexColor = `#${textStyle.color.toHex().r}${
       textStyle.color.toHex().g
     }${textStyle.color.toHex().b}`;
+
     if (level1 in result) {
       result[level1][level2] = {
         color: hexColor,
@@ -75,7 +75,6 @@ function textStyles(context) {
       },
     };
   });
-  console.log(result);
   return {
     language: 'json',
     code: JSON.stringify(result, null, 2),
